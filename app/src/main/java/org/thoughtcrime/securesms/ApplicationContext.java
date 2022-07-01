@@ -226,7 +226,7 @@ public class ApplicationContext extends MultiDexApplication implements AppForegr
       RetrieveProfileJob.enqueueRoutineFetchIfNecessary(this);
       executePendingContactSync();
       KeyCachingService.onAppForegrounded(this);
-      ApplicationDependencies.getShakeToReport().enable();
+      //ApplicationDependencies.getShakeToReport().enable();
       checkBuildExpiration();
     });
 
