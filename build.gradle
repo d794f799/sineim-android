@@ -81,7 +81,7 @@ task qa {
             ':Signal-Android:lintPlayProdRelease',
             'Signal-Android:ktlintCheck',
             ':libsignal-service:test',
-            ':Signal-Android:assemblePlayProdRelease'
+            ':Signal-Android:assembleWebsiteProdRelease'
 }
 
 task clean(type: Delete) {
