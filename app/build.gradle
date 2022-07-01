@@ -166,7 +166,7 @@ android {
         multiDexEnabled true
 
         vectorDrawables.useSupportLibrary = true
-        project.ext.set("archivesBaseName", "Signal");
+        project.ext.set("archivesBaseName", "SineIM");
 
         buildConfigField "long", "BUILD_TIMESTAMP", getLastCommitTimestamp() + "L"
         buildConfigField "String", "GIT_HASH", "\"${getGitHash()}\""
@@ -296,7 +296,7 @@ android {
 
         website {
             dimension 'distribution'
-            ext.websiteUpdateUrl = "https://updates.signal.org/android"
+            ext.websiteUpdateUrl = "https://raw.githubusercontent.com/d794f799/sineim-android/main/update"
             buildConfigField "boolean", "PLAY_STORE_DISABLED", "true"
             buildConfigField "String", "NOPLAY_UPDATE_URL", "\"$ext.websiteUpdateUrl\""
             buildConfigField "String", "BUILD_DISTRIBUTION_TYPE", "\"website\""
