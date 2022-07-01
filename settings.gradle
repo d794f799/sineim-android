@@ -21,7 +21,7 @@ include ':contacts-app'
 include ':qr'
 include ':qr-app'
 
-project(':app').name = 'Signal-Android'
+project(':app').name = 'SineIM-Android'
 project(':paging').projectDir = file('paging/lib')
 project(':paging-app').projectDir = file('paging/app')
 
@@ -45,6 +45,6 @@ project(':contacts-app').projectDir = file('contacts/app')
 project(':qr').projectDir = file('qr/lib')
 project(':qr-app').projectDir = file('qr/app')
 
-rootProject.name='Signal'
+rootProject.name='SineIM'
 
 apply from: 'dependencies.gradle'
