@@ -8,7 +8,7 @@ public final class AppCapabilities {
   private AppCapabilities() {
   }
 
-  private static final boolean UUID_CAPABLE        = true;
+  private static final boolean UUID_CAPABLE        = false;
   private static final boolean GV2_CAPABLE         = true;
   private static final boolean GV1_MIGRATION       = true;
   private static final boolean ANNOUNCEMENT_GROUPS = true;
@@ -20,6 +20,6 @@ public final class AppCapabilities {
    *                       asking if the user has set a Signal PIN or not.
    */
   public static AccountAttributes.Capabilities getCapabilities(boolean storageCapable) {
-    return new AccountAttributes.Capabilities(UUID_CAPABLE, GV2_CAPABLE, storageCapable, GV1_MIGRATION, SENDER_KEY, ANNOUNCEMENT_GROUPS, CHANGE_NUMBER, FeatureFlags.stories(), FeatureFlags.giftBadges(), FeatureFlags.phoneNumberPrivacy());
+    return new AccountAttributes.Capabilities(UUID_CAPABLE, GV2_CAPABLE, storageCapable, GV1_MIGRATION, SENDER_KEY, ANNOUNCEMENT_GROUPS, CHANGE_NUMBER, FeatureFlags.stories(), FeatureFlags.giftBadges());
   }
 }
